@@ -3,7 +3,7 @@
 #### -- Project Status: [ On-Hold ]
 
 ## Project Intro/Objective
-This project contains a dashboard analysing data of Formula 1 races from 1950 and up.
+This project contains a dashboard analysing data of Formula 1 races from 1950 and up. A demo is available on Render [here](https://formula1-dashboard-65yi.onrender.com/).
 
 <!--
 ### Collaborators
@@ -31,6 +31,8 @@ The goals of this project were to analyze some dataset with strong relational li
 
 All this analysis makes use of a Kaggle dataset with the following schema ([source](http://ergast.com/images/ergast_db.png)):
 ![Schema SQL](figs/schema.png)
+
+A demo is available on the hosting service Render [here](https://formula1-dashboard-65yi.onrender.com/) (this uses the free tier and is thus significantly slowed down).
 
 
 ## Getting Started
