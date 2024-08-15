@@ -13,6 +13,7 @@ app = DashProxy(
     external_stylesheets=external_stylesheets,
     suppress_callback_exceptions=True,
 )
+server = app.server
 
 # Load custom HTML template
 with open(config.path_index, "r") as f:
