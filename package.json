@@ -1,0 +1,9 @@
+{
+  "devDependencies": {
+    "tailwindcss": "^3.4.9"
+  },
+  "dependencies": {
+    "flag-icons": "^7.2.3",
+    "flowbite": "^2.5.1"
+  }
+}

@@ -1,9 +1,9 @@
-# PROJECT NAME
+# Formula 1 Data Analysis
 
 #### -- Project Status: [ On-Hold ]
 
 ## Project Intro/Objective
-PROJECT DESCRIPTION (short)
+This project contains a dashboard analysing data of Formula 1 races from 1950 and up.
 
 <!--
 ### Collaborators
@@ -13,34 +13,35 @@ PROJECT DESCRIPTION (short)
 
 ### Data sources
 
+* [Kaggle dataset](https://www.kaggle.com/datasets/rohanrao/formula-1-world-championship-1950-2020)
+
 ### Methods Used
 * Data Analysis
-* Machine Learning
 * Data Visualization
 * Predictive Modeling
 
 ### Technologies
 * Python
-* Pandas, Scikit-learn, numpy
+* SQL
+* Plotly Dash
+* Pandas
 
 ## Project Description
-PROJECT DESCRIPTION (long)
+The goals of this project were to analyze some dataset with strong relational links using SQL and present the results as a clear and interactive dashboard, built in Plotly. The dashboard summarizes the top race winners and qualifiers for a given year selected by the user. Once a year is chosen, the dashboard can be used to summarize a driver's grid and result positions as well as the overall lineup for any circuit.
+
+All this analysis makes use of a Kaggle dataset with the following schema ([source](http://ergast.com/images/ergast_db.png)):
+![Schema SQL](figs/schema.png)
 
 
 ## Getting Started
 
 1. Clone this repository.
-2. Raw data is being kept [here](data/raw) within this repo.
-3. Data processing/transformation scripts are being kept [here](src/).
-4. Exploratory data analysis can be found in a Jupyter notebook [here](notebooks/0_Exploratory_Data_Analysis.ipynb).
+2. Raw data is being kept [here](data/raw) within this repo in `.csv` files. An sqlite database is located [here](data/final).
+3. A script to generate the sqlite database from the `.csv` files can be found in `scripts/`.
 
-To run the main analysis build the container using
+To run dashboard, use
 ```bash
-docker build -t IMAGE_NAME .
-```
-and then run the image
-```bash
-docker run --rm IMAGE_NAME
+python3 app.py
 ```
 
 

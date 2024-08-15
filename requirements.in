@@ -1,0 +1,9 @@
+pyprojroot
+seaborn
+dash
+dash-extensions
+dash-svg
+pandas
+sqlalchemy
+cachetools
+gunicorn
