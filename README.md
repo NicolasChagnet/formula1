@@ -13,7 +13,8 @@ This project contains a dashboard analysing data of Formula 1 races from 1950 an
 
 ### Data sources
 
-* [Kaggle dataset](https://www.kaggle.com/datasets/rohanrao/formula-1-world-championship-1950-2020)
+<!-- * [Kaggle dataset](https://www.kaggle.com/datasets/rohanrao/formula-1-world-championship-1950-2020) -->
+* [Kaggle dataset](https://www.kaggle.com/datasets/jtrotman/formula-1-race-data)
 
 ### Methods Used
 * Data Analysis
