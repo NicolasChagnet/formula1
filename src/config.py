@@ -42,6 +42,7 @@ nationality_map = {
     "Hungarian": "hu",
     "Irish": "ie",
     "Danish": "dk",
+    "Argentinian": "ar",
     "Argentine": "ar",
     "Czech": "cz",
     "Malaysian": "my",

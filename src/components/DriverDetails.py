@@ -1,8 +1,9 @@
-from dash_extensions.enrich import html, dcc, no_update
-from dash import get_asset_url
-from src import config, data
-import plotly.graph_objects as go
 import pandas as pd
+import plotly.graph_objects as go
+from dash import get_asset_url
+from dash_extensions.enrich import dcc, html, no_update
+
+from src import config, data
 
 
 def DetailSection(driver_list, circuit_list, id_list_driver, id_list_circuits, id_container):
@@ -34,7 +35,9 @@ def DriversDropdown(driver_list, id_list):
                     children=[
                         html.Img(
                             className="w-4",
-                            src=get_asset_url(f"flags/1x1/{config.nationality_map[driver_row['driver_country']]}.svg"),
+                            src=get_asset_url(
+                                f"flags/1x1/{config.nationality_map[driver_row['driver_country'].strip()]}.svg"
+                            ),
                         ),
                         driver_row["driver_fullname"],
                     ],
@@ -202,9 +205,7 @@ def make_details_driver(driver_value, year_value):
 
 def make_details_circuit(circuit_value, year_value):
     # Load the data about the driver and the circuits of that year
-    data_drivers = data.get_data_query_file(
-        "drivers_at_circuit_year", circuit_id=circuit_value, year_chosen=year_value
-    )
+    data_drivers = data.get_data_query_file("drivers_at_circuit_year", circuit_id=circuit_value, year_chosen=year_value)
     if data_drivers.empty:
         return no_update
     data_drivers["label_circuit"] = data_drivers.apply(
